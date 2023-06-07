@@ -10,13 +10,13 @@ module.exports = {
       }
     },
     fontFamily:{
-      xs: 14,
-      sm: 16,
-      md: 18,
-      lg: 20,
-      xl: 24,
-      '2xl': 32,
-      '4xl': 48,
+      xs: '1.4rem',
+      sm: '1.6rem',
+      md: '1.8rem',
+      lg: '2.0rem',
+      xl: '2.4rem',
+      '2xl': '3.2rem',
+      '4xl': '4.8rem',
     },
 
     colors:{
@@ -34,6 +34,23 @@ module.exports = {
       sky: '#1F283F',
       amber: '#DFD2BA',
       grey: '#404040'
+    },
+
+    screens: {
+      'celp': {'max': '375px'},
+      // => @media (min-width: 640px) { ... }
+
+      'celg': {'max': '480px'},
+      // => @media (min-width: 768px) { ... }
+
+      'tablet': {'max': '768px'},
+      // => @media (min-width: 1024px) { ... }
+
+      'deskp': {'max': '1024px'},
+      // => @media (min-width: 1280px) { ... }
+
+      'deskg': {'max': '1440px'},
+      // => @media (min-width: 1536px) { ... }
     }
   },
   plugins: [],
